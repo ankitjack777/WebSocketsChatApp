@@ -1,0 +1,56 @@
+
+#mainDiv {
+    height: 100vh; /* view port height*/
+    width: 100%;
+   /* position: fixed;/* this helps to keep height width 100%*/
+    display: flex;
+    flex-direction: column;
+}
+
+#navDiv {
+    display: flex;
+    flex-basis:5%;
+    flex-direction: row-reverse;
+    border: 4px solid #E3170A;
+    background: #E16036;
+    padding: 0px;
+    color: white;
+    font: 18px Arial;
+    margin: 0 15px 15px 0px;/*top right bottom,left*/
+}
+
+#midDiv ,#lastDiv   {
+    display: flex;
+    flex-basis:45%;
+    flex-direction: row;
+    flex:1;/*flexgrow, flex shrink,  flex basis*/
+}
+
+#onlineUsersListDiv {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.userDetails {
+    display : flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /*font-size: 20px;*/
+    /*font-weight:bold;*/
+    border: solid rgb(0, 0, 255);
+}
+
+.userName {
+
+}
+/*
+display - flex -  makes it a flex container
+flexgrow - set to 0,1,2..  and so on,total size will be distributed among items
+flexshrink - shrink to size- if possible
+flex basis - min size for item
+
+
+order - give a particular position to a item in a flex container
+
+*/
